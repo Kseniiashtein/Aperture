@@ -93,28 +93,30 @@ header nav div a {
   letter-spacing: 0.4px;
 }
 
-section.title .container {
-  margin: auto;
-  max-width: 1440px;
-  height: 716px;
+section.title {
   background-image: url(../images/background_section_title.svg);
   background-size: cover;
-  padding-top: 441px;
-  padding-bottom: 41px;
+  background-position: center center;
+}
+section.title .container {
+  max-width: 1440px;
+  height: calc(100vh - 82px);
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+  position: relative;
 }
 
-section.title .wrapper-top {
+section.title article {
   padding-top: 20px;
   padding-bottom: 10px;
-}
-
-section.title .content {
-  display: flex;
-  margin: auto;
   max-width: 600px;
+  text-align: center;
 }
 
-section.title .content h2 {
+section.title article h2 {
   color: #c0c0c0;
   text-align: center;
   font-family: "poppinsregular";
@@ -126,7 +128,7 @@ section.title .content h2 {
   text-transform: uppercase;
 }
 
-section.title .content h1 {
+section.title article h1 {
   color: #fff;
   text-align: center;
   font-family: "poppinsregular";
@@ -137,7 +139,7 @@ section.title .content h1 {
   margin-bottom: 18px;
 }
 
-section.title .content p {
+section.title article p {
   color: #c0c0c0;
   min-width: 580px;
   text-align: center;
@@ -148,26 +150,44 @@ section.title .content p {
   line-height: 20px; /* 142.857% */
 }
 
-section.title .wrapper-bottom ul {
+section.title .param {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
   display: flex;
   justify-content: end;
   list-style-type: none;
-  margin-right: 40px;
 }
 
-section.title ul div {
-  margin-left: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 6px;
-}
-
-section.title ul p {
+section.title li {
+  margin-left: 30px;
   color: #fff;
   font-family: "poppinsregular";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 12px; /* 100% */
+  padding-bottom: 5px;
+}
+
+.param li::before {
+  content: url(../images/icon_shutter\ speed.svg);
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  position: relative;
+  bottom: -5px;
+}
+
+.param li:nth-of-type(2)::before {
+  content: url(../images/icon_aperture.svg);
+  /* position: absolute; */
+  /* left: -20px; */
+}
+.param li:nth-of-type(3)::before {
+  content: url(../images/icon_iso.svg);
+}
+
+.param li:last-of-type::before {
+  content: url(../images/icon_location.svg);
 }
