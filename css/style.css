@@ -228,23 +228,28 @@ section.clients p {
   margin-bottom: 40px;
 }
 
-section.clients .owl-carousel {
+section.clients .carousel {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 46px;
   padding-right: 46px;
-  gap: 109px;
+  /* gap: 109px; */
   align-items: center;
 }
 
-.owl-carousel .owl-item img {
-  max-width: 128px;
-  width: auto;
+.owl-carousel.owl-drag .owl-item {
+  display: flex;
+  justify-content: center;
 }
 
-.owl-stage {
+section.clients .owl-stage img {
+  max-width: auto;
+}
+
+section.clients .owl-stage {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
