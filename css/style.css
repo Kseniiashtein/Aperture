@@ -191,3 +191,60 @@ section.title li {
 .param li:last-of-type::before {
   content: url(../images/icon_location.svg);
 }
+
+section.clients {
+  background-color: #000;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+section.clients .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1168px;
+}
+
+section.clients h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "poppinsregular";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 105% */
+  margin-bottom: 15px;
+}
+
+section.clients p {
+  color: #c0c0c0;
+  text-align: center;
+  font-family: "poppinsregular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+  margin-bottom: 40px;
+}
+
+section.clients .owl-carousel {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 46px;
+  padding-right: 46px;
+  gap: 109px;
+  align-items: center;
+}
+
+.owl-carousel .owl-item img {
+  max-width: 128px;
+  width: auto;
+}
+
+.owl-stage {
+  display: flex;
+  align-items: center;
+}
